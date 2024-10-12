@@ -33,7 +33,7 @@ const Hero = () => {
         </motion.div>
         <div className="flex relative items-center justify-center lg:my-10">
           <PullUp delay={0.4}>
-            <PullUpItem y={80} duration={1}>
+            <PullUpItem y={0} duration={1}>
               <Image alt="Hero Image" className="hidden lg:block scale-[1.15]  aspect-[194/433] object-cover " width="194" height="433" src="/phone-1.png" />
               <Image
                 alt="Hero Image"
@@ -59,7 +59,7 @@ const Hero = () => {
 
       <FadeIn delay={2} className=" mt-28">
         <h5 className=" sm:hidden text-lg font-semibold mb-1 tracking-tighter -text--grey-white">We are supported by</h5>
-        <Image src={"/partners.png"} width={457} height={80} className="aspect-[457/80] sm:mx-auto" alt="risevest partners" />
+        <Image src={"/partners.png"} width={457} height={80} className="aspect-[457/80] sm:mx-auto [filter:hue-rotate(185deg)]" alt="risevest partners" />
       </FadeIn>
     </section>
   );

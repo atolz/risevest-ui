@@ -54,7 +54,7 @@ const Offer = () => {
     },
   ];
   return (
-    <div className=" container ">
+    <section className=" container ">
       {offers.map((offer, i) => {
         return (
           <div className={cn("max-w-[1000px] mx-auto flex even:flex-row-reverse gap-24 lg:gap-32  items-center mb-16 sm:mb-10 md:h-[306px] ", isMobile && i == 3 ? "hidden" : "")} key={i}>
@@ -78,7 +78,7 @@ const Offer = () => {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };
 

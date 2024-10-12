@@ -5,7 +5,7 @@ import { Arrow, Button } from "../button";
 
 const Goal = () => {
   return (
-    <div className="hidden py-20 max-w-4xl mx-auto min-[1000px]:flex items-center pl-6 /justify-center gap-40">
+    <section className="hidden py-20 max-w-4xl mx-auto min-[1000px]:flex items-center pl-6 /justify-center gap-40">
       <div className="relative shrink-0">
         <Image unoptimized alt="phone screen showing goals" width={284} height={544} src={"/phone-2.png"} className=" h-[508px]/ aspect-[284/544] " />
         <div
@@ -32,7 +32,7 @@ const Goal = () => {
         </p>
         <Button href="#">Start Saving</Button>
       </div>
-    </div>
+    </section>
   );
 };
 

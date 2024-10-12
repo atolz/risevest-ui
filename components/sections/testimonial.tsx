@@ -33,7 +33,7 @@ const reviews = [
 const Testimonial = () => {
   const isMobile = useMediaQuery("(max-width:768px)");
   return (
-    <div className=" mt-20 mb-48">
+    <section className=" mt-20 mb-24 sm:mb-48">
       <div className=" px-2 text-center flex flex-col items-center mx-auto mb-14">
         <h2 className=" font-tomato-grotesk font-bold text-3xl md:text-4xl mb-2 text-primary max-w-[294px] md:max-w-max">
           {isMobile ? "What our customers are saying" : "From The People Who Use Rise"}
@@ -50,7 +50,7 @@ const Testimonial = () => {
           ))}
         </Marquee>
       </div>
-    </div>
+    </section>
   );
 };
 
