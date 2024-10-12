@@ -53,8 +53,8 @@ const Hero = () => {
       </div>
 
       <FadeIn delay={2} className=" mt-28">
-        <h5 className=" lg:hidden text-lg font-semibold mb-1 tracking-tighter -text--grey-white">We are supported by</h5>
-        <Image src={"/partners.png"} width={457} height={80} className="aspect-[457/80] h-[80px] lg:mx-auto" alt="risevest partners" />
+        <h5 className=" sm:hidden text-lg font-semibold mb-1 tracking-tighter -text--grey-white">We are supported by</h5>
+        <Image src={"/partners.png"} width={457} height={80} className="aspect-[457/80] sm:mx-auto" alt="risevest partners" />
       </FadeIn>
     </section>
   );

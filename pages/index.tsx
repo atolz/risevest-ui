@@ -10,6 +10,7 @@ import Testimonial from "@/components/sections/testimonial";
 import Community from "@/components/sections/community";
 import Download from "@/components/sections/download";
 import Footer from "@/components/sections/footer";
+import Head from "next/head";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "700"],
@@ -30,6 +31,11 @@ const tomatoGrotesk = localFont({
 export default function Home() {
   return (
     <div className={`${dmSans.className} ${dmSans.variable} ${tomatoGrotesk.variable} antialiased overflow-x-hidden`}>
+      <Head>
+        <title>Rise - Dollar investments that help you grow.</title>
+        <meta name="description" content="Rise - Dollar investments that help you grow." />
+        <link rel="icon" href="https://fav.farm/💲" />
+      </Head>
       <Header />
       <main>
         <Hero />
