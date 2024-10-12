@@ -11,22 +11,22 @@ const reviews = [
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jesse Bade",
-    role: "@arthur",
+    name: "Ridwan Taiwo",
+    role: "Venture investor",
     body: "I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "Godstime Akpi",
-    role: "@godstime",
-    body: "With community contribution, people to come together to support a common cause or goal. It is a powerful way to mobilize resources and create meaningful change in local communities and beyond.",
+    name: "Awa Ekekwe",
+    role: "Marketing Executive",
+    body: "I chose Rise to diversify my portfolio and ensure my investments are backed by experts. With the instability in global markets, Rise provides a secure way to grow my wealth without needing deep financial expertise.",
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "Chucho Emmanuel",
-    role: "@Emmanuel",
-    body: "Celebration funding is a way to raise funds for a chosen cause while commemorating a special occasion, such as a birthday or wedding. Instead of receiving traditional gifts, donors can make a donation to the celebrant's chosen charity.",
-    img: "https://avatar.vercel.sh/jane",
+    name: "Sophia Garcia",
+    role: "Entrepreneur",
+    body: "I appreciate Rise’s transparent process and experienced team. As someone focused on building my business, I rely on Rise to manage my investments effectively and safeguard my future finances.",
+    img: "https://avatar.vercel.sh/sophia",
   },
 ];
 

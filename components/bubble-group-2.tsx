@@ -7,7 +7,7 @@ type Props = { className?: string };
 
 const BubbleGroup2 = ({ className }: Props) => {
   return (
-    <PullUp delay={0.4} className={cn("absolute w-full h-full", className)}>
+    <PullUp staggerChildren={0.2} delay={0.4} className={cn("absolute w-full h-full", className)}>
       <PullUpItem className=" absolute top-[11%] left-[-6.5%]">
         <RiseBubble />
       </PullUpItem>
