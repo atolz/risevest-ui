@@ -22,7 +22,7 @@ const Download = () => {
           delay={0.5}
           className="absolute md:mr-20 w-[258px] -bottom-[344px] left-1/2 -translate-x-1/2 md:translate-x-0 md:relative md:left-0 md:bottom-0 md:-translate-y-4"
           whileInView={true}
-          viewPortProps={{ amount: 0 }}
+          viewPortProps={{ amount: 0, once: true }}
         >
           <PullUpItem duration={0.3} y={100}>
             {/* <Image alt="phone screen" src="/phone-1-shadow.png" width={208} height={425} /> */}

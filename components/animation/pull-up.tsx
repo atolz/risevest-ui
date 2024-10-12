@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 type PullUpProps = { whileInView?: boolean; staggerChildren?: number; viewPortProps?: { amount?: number; once?: boolean }; delay?: number; className?: string; children: ReactNode };
 
-export const PullUp = ({ whileInView, staggerChildren = 0.2, viewPortProps = { once: false }, delay = 0, className, children }: PullUpProps) => {
+export const PullUp = ({ whileInView, staggerChildren = 0.2, viewPortProps = { once: true }, delay = 0, className, children }: PullUpProps) => {
   const pullUpVariants = {
     show: {
       transition: {
