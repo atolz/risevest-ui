@@ -52,7 +52,7 @@ const Footer = () => {
         {groupedNav.map((group, i) => {
           return (
             <li key={`group-${i}`}>
-              {i == 0 ? <RiseLogo className="mb-3 mt-2" /> : <h3 className="font-semibold font-tomato-grotesk first-letter:capitalize mb-3 text-black lg:mb-5">{group.groupName}</h3>}
+              {i == 0 ? <RiseLogo className="mb-6 /mt-2" /> : <h3 className="font-semibold font-tomato-grotesk first-letter:capitalize mb-3 text-black lg:mb-5">{group.groupName}</h3>}
               <ul className="gap-3 grid text-sm font-light">
                 {group.items.map((item, i) => {
                   return (

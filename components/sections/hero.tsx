@@ -5,10 +5,12 @@ import BubbleGroup2 from "../bubble-group-2";
 import { PullUp, PullUpItem } from "../animation/pull-up";
 import { motion } from "framer-motion";
 import FadeIn from "../animation/fade-in";
+import { useMediaQuery } from "@mantine/hooks";
 
 const Hero = () => {
+  const isMobile = useMediaQuery("(max-width: 1024px)");
   return (
-    <section className="relative container px-2 mx-auto py-6 mb-20">
+    <section className="relative container px-2 mx-auto pt-12 py-6 mb-16 md:mb-20">
       <div className="relative flex items-center flex-col gap-8 lg:gap-14 lg:flex-row justify-between flex-wrap /px-4 md:pl-6 md:pr-14">
         <BubbleGroup1 className="" />
         <motion.div
@@ -20,12 +22,14 @@ const Hero = () => {
           <motion.h1
             animate={{ color: "var(--primary)" }}
             transition={{ delay: 1.8, duration: 1 }}
-            className="relative font-tomato-grotesk font-semibold text-3xl min-[360px]:text-4xl lg:text-5xl xl:text-[56px] leading-tight"
+            className="relative font-tomato-grotesk tracking-tight font-semibold text-3xl min-[360px]:text-4xl lg:text-5xl xl:text-[56px] leading-tight"
           >
-            Dollar investments that help you grow<sup className=" text-6xl leading-[0] text-primary-1 top-[-0.2em] lg:top-[-0.3em]">.</sup>
+            Dollar investments that help you grow<sup className=" text-6xl leading-[0] text-primary-1 lg:text-primary top-[-0.2em] lg:top-[-0.3em]">.</sup>
           </motion.h1>
 
-          <p className="max-w-[391px] font-medium mt-4 mb-8">We put your money in high quality assets that help you build wealth and achieve your financial goals.</p>
+          <p className="max-w-[391px] font-medium mt-4 mb-8">
+            {isMobile ? " Your personal wealth manager. Get started with a minimum of $10." : "We put your money in high quality assets that help you build wealth and achieve your financial goals."}
+          </p>
           <div className="flex items-center justify-center flex-wrap gap-2 min-[320px]:gap-4">
             <ButtonDownload type="apple" className="" />
             <ButtonDownload type="google" className="" />
@@ -57,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <FadeIn delay={2} className=" mt-28">
+      <FadeIn delay={2} className=" mt-20 md:mt-28">
         <h5 className=" sm:hidden text-lg font-semibold mb-1 tracking-tighter -text--grey-white">We are supported by</h5>
         <Image src={"/partners.png"} width={457} height={80} className="aspect-[457/80] sm:mx-auto [filter:hue-rotate(185deg)]" alt="risevest partners" />
       </FadeIn>

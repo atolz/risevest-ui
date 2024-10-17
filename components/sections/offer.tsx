@@ -66,7 +66,7 @@ const Offer = () => {
               </Button>
             </div>
             <div className={cn("w-full md:w-1/2 flex flex-col items-center md:flex-row", offer?.imgConainerCN)}>
-              <div className="relative mb-8 sm:mb-10 md:mb-0 /md:scale-[.9] max-w-[250px] md:max-w-max">
+              <div className="relative mb-8 sm:mb-10 md:mb-0 /md:scale-[.9] max-w-[180px] md:max-w-max">
                 <Image width={offer.width} height={offer.height} className={twMerge("-translate-y-2  ", offer?.imgCN)} alt="illustration" src={offer.src} />
                 <div className="md:hidden absolute bottom-0 left-0 h-[22px] w-full bg-[#A0DDE2CC]/80"></div>
               </div>

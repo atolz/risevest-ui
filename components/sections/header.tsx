@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header className="w-full bg-white  ">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <Link href="/" className="flex items-center space-x-2 xl:ml-10 text-primary">
+        <Link href="/" className="flex items-center space-x-2 xl:ml-12 text-primary">
           <RiseLogo />
         </Link>
         <nav className="hidden lg:flex gap-6">

@@ -15,7 +15,7 @@ export default function Marquee({ className, reverse, pauseOnHover = false, chil
     <div
       {...props}
       className={cn(
-        "group flex overflow-hidden pb-6 md:pb-0 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        "group flex overflow-hidden pb-6 md:pb-0 [--duration:40s] [--gap:1.8rem] [gap:var(--gap)]",
         {
           "flex-row": !vertical,
           "flex-col": vertical,

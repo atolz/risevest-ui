@@ -38,7 +38,7 @@ const Testimonial = () => {
         <h2 className=" font-tomato-grotesk font-bold text-3xl md:text-4xl mb-2 text-primary max-w-[294px] md:max-w-max">
           {isMobile ? "What our customers are saying" : "From The People Who Use Rise"}
         </h2>
-        <p className=" max-w-[502px] font-medium">
+        <p className=" max-w-[554px] font-medium lg:text-lg">
           {isMobile ? "We serve over 80,000 amazing users." : "Our mission at Risevest is to empower more people just like you to achieve your personal financial goals."}
         </p>
       </div>
@@ -58,14 +58,10 @@ const ReviewCard = ({ img, name, role, body }: { img: string; name: string; role
   return (
     <figure
       className={cn(
-        "relative w-[300px] md:w-[400px] min-h-[238px] flex flex-col items-center md:items-start cursor-pointer overflow-hidden rounded-[10px] border p-4 [box-shadow:_0px_12px_24px_0px_hsla(184,_52%,_51%,_0.15)]",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "relative w-[300px] md:w-[400px] min-h-[238px] flex flex-col items-center md:items-start cursor-pointer overflow-hidden rounded-[10px] border p-6 [box-shadow:_0px_12px_24px_0px_hsla(184,_52%,_51%,_0.15)] border-[#ECFEFE]"
       )}
     >
-      <blockquote className=" text-center md:text-left mb-auto">{body}</blockquote>
+      <blockquote className=" text-center md:text-left mb-auto text-base">{body}</blockquote>
       <div className="flex flex-col text-center md:text-left md:flex-row items-center gap-2 mt-4">
         <img className="rounded-full" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col">
